@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us - Financial Experts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Fonts */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 20px 0;
+    }
+    header ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    header ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        transition: opacity 0.3s;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    header ul li a:hover {opacity: 0.7;}
+
+    /* HERO */
+    .hero {
+        height: 800px;
+        background: url("https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    .hero-overlay {position:absolute; inset:0; background: rgba(0,0,0,0.5);}
+    .hero h1 {position: relative; color: #fff; font-size: 48px; z-index: 1;}
+    .hero p {position: relative; color: #fff; z-index: 1; margin-top: 10px;}
+
+    .container {max-width: 1150px; margin: auto; padding: 60px 20px;}
+
+    /* ABOUT */
+    .about-section {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-text {flex: 1; min-width: 280px;}
+    .about-text h2 {font-size: 36px; color: #00a86b; margin-bottom: 15px;}
+    .about-text p {color: #555; line-height: 1.7; margin-bottom: 20px;}
+    .about-image {flex: 1; min-width: 280px;}
+    .about-image img {width: 100%; border-radius: 12px;}
+
+    /* STATS */
+    .stats {display: flex; justify-content: center; gap: 40px; margin-top: 30px;}
+    .stat h3 {font-size: 28px; color: #00a86b; margin: 0;}
+    .stat span {display: block; color: #777; margin-top: 6px;}
+
+    /* FEATURES */
+    .features {margin-top: 60px;}
+    .features h3 {font-size: 30px; color: #00a86b; margin-bottom: 15px;}
+    .features ul {margin-left: 20px; color: #555; font-family: 'Open Sans', Arial, sans-serif;}
+    .features ul li {margin-bottom: 10px;}
+
+    /* TESTIMONIALS */
+    .testimonials {background: #f8fafb; padding: 60px 20px; text-align: center;}
+    .testimonials h2 {font-size: 32px; color: #00a86b; margin-bottom: 15px;}
+    .testimonial-card {
+        display: inline-block;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        width: 280px;
+        margin: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    .testimonial-card p {font-style: italic; color: #555;}
+    .testimonial-card strong {display: block; margin-top: 10px; color: #00a86b;}
+
+    /* BRANDS */
+    .brands {background: #f1f5f9; padding: 40px 20px;}
+    .brand-list {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; max-width: 1000px; margin: auto;}
+    .brand-list img {height: 50px; opacity: 0.7;}
+
+    /* FOOTER */
+    footer {background: #333; color: #fff; text-align: center; padding: 20px; font-size: 14px;}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav style="max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;">
+        <div style="color:#fff;font-weight:bold;font-size:22px;font-family:'Montserrat', Arial, sans-serif;"><img src="https://images.jdmagicbox.com/v2/comp/mumbai/w3/022pxx22.xx22.170330120028.n6w3/catalogue/yash-finance-solutions-borivali-east-mumbai-home-loans-BZmFaPSb7u-250.jpg" style="height:100px; width:auto; object-fit:contain;"
+            alt="Logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Our Cases</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+			 <li><a href="services.html">Services</a></li>
+			
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div>
+        <h1>About Us</h1>
+    </div>
+</section>
+
+<!-- ABOUT SECTIONS -->
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Story</h2>
+        <p>The Concept: We act as a professional bridge, blending modern technology with expert advisory to connect borrowers with the right financial solutions.</p>
+        <p>The Goal: Our mission is to make financial products accessible, transparent, and completely stress-free for everyone and to spread happiness.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Team Collaboration">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>Empowerment: To empower individuals, families, and entrepreneurs with trusted financial products and superior service.</p>
+        <p>Reliability: To demonstrate deep capability and reliability in the financial sector through thousands of processed applications.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://thumbs.dreamstime.com/b/handwriting-text-writing-our-mission-concept-meaning-tasks-schedule-need-to-made-them-right-order-success-woman-wear-161510246.jpg" alt="Mission">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Vision</h2>
+        <p>Trusted Partner: To become the most trusted financial solutions partner across India.</p>
+        <p>Confident Borrowing: To help people navigate the world of smart borrowing with total confidence.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://iaam.se/img/Our%20Vision%20&%20Mission/Pic%201%20-%20640%20X%20426px%20Vision.jpg" alt="Vision">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Institutional Partners</h2>
+        <p>Nationalized Banks: SBI, Bank of Baroda, PNB, Canara Bank, Union Bank.</p>
+        <p>Private Banks: HDFC, ICICI, Axis, Kotak, IDFC Bank, IndusInd.</p>
+        <p>NBFCs: Bajaj Finance, Tata Capital, Aditya Birla, Mahindra Finance</p>
+        <p>Housing Finance: LIC HFL, PNB Housing, HDFC HFC, Bajaj Housing etc.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://www.calmconsultancy.com/images/institutional-partners-banner.jpg" alt="Partners">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container features">
+    <h3>What Makes Us Different</h3>
+    <ul>
+        <li>Institutional Strength: We leverage a vast network of 50+ partners, including top Nationalized Banks, Private Banks, and NBFCs, to find your best match.</li>
+        <li>Bank-Ready Documentation: We professionally structure your data to ensure it meets strict institutional standards for 2x faster approvals.</li>
+        <li>Deep Industry Experience: Beyond just loans, we bring decades of combined experience in property sales.</li>
+        <li>High-Volume Success: Our track record includes successfully facilitating thousands of applications with consistent commitment to client satisfaction.</li>
+    </ul>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>Leadership / Team Section</h2>
+    <div class="testimonial-card">
+        <p>“Their financial advice transformed our business. Professional, responsive, and results-driven!”</p>
+        <strong>– Sarah M.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Excellent service and personalized planning. Highly recommend!”</p>
+        <strong>– James R.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Top-tier financial guidance that helped me secure my future.”</p>
+        <strong>– Linda K.</strong>
+    </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+    <div class="brand-list">
+        <img src="https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3184350/pexels-photo-3184350.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3183179/pexels-photo-3183179.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" alt="">
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    &copy; 2026 Financial Experts • All Rights Reserved
+</footer>
+
+</body>
+</html>

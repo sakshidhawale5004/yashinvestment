@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Services — Financial Consulting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Font Setup */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:10;
+        padding:20px 0;
+    }
+    header ul{
+        list-style:none;
+        display:flex;
+        gap:25px;
+        margin:0;
+        padding:0;
+    }
+    header ul li a{
+        color:#fff;
+        text-decoration:none;
+        font-size:15px;
+        transition:opacity 0.3s;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    header ul li a:hover{opacity:0.7;}
+
+    /* HERO */
+    .hero{
+        height:700px;
+        background:url("https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        position:relative;
+    }
+    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.5);}
+    .hero h1{position:relative;color:#fff;font-size:42px;}
+    .hero p{position:relative;color:#fff;font-size:18px;margin-top:8px;}
+
+    .container{max-width:1150px;margin:auto;padding:60px 20px;}
+
+    .section-title{text-align:center;color:#00a86b;font-size:32px;margin-bottom:20px;}
+    
+    .services-grid, .insurance-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;}
+    
+    .service-card, .insurance-card{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;overflow:hidden;text-align:center;padding:0;}
+    
+    .service-card img{width:100%;height:200px;object-fit:cover;}
+    
+    .service-card h3, .insurance-card h3{font-size:22px;color:#00a86b;margin:15px 0 10px 0;}
+    .service-card p, .insurance-card p{margin:0 15px 15px;color:#555;font-size:15px;}
+
+    /* WHY US SECTION */
+    .why-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;margin-top:40px;}
+    .why-item{flex:1;min-width:220px;text-align:center;padding:20px;}
+    .why-item h4{font-size:20px;color:#00a86b;margin-bottom:10px;}
+    .why-item p{color:#555;font-size:14px;}
+
+    /* FOOTER */
+    footer{background:#333;color:#fff;text-align:center;padding:20px;font-size:14px;}
+
+</style>
+</head>
+
+<body>
+<header>
+    <nav style="max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;">
+        <div style="color:#fff;font-weight:bold;font-size:22px;font-family:'Montserrat', Arial, sans-serif;"><img src="https://images.jdmagicbox.com/v2/comp/mumbai/w3/022pxx22.xx22.170330120028.n6w3/catalogue/yash-finance-solutions-borivali-east-mumbai-home-loans-BZmFaPSb7u-250.jpg" style="height:150px; width:auto; object-fit:contain;"
+            alt="Logo"></div></div>
+        <ul>
+		</nav>
+</header>
+<!-- HEADER -->
+<header>
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Our Cases</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+			 <li><a href="aboutus.html">About Us</a></li>
+			
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Comprehensive Financial Products Tailored for You</h1>
+        <p>Explore a wide range of loan services designed to empower individuals and businesses to achieve their financial aspirations with confidence.</p>
+    </div>
+</section>
+
+<!-- LOAN PRODUCTS -->
+<section class="container">
+    <div class="section-title">Loan Products Section</div>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="https://easyhomefinance.in/knowledge-hub/wp-content/uploads/2025/07/loan-buy-house-pressure-buy-house.jpg" alt="">
+            <h3>Home Loans</h3>
+            <p>Flexible duration and EMI planning for buying, constructing, or renovating your house.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://bfsi.eletsonline.com/wp-content/uploads/2023/01/Business-Loan.jpg" alt="">
+            <h3>Business Loans</h3>
+            <p>Capital support to grow your business, expand operations, or launch new products.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.rupeecircle.com/client-assets/images/loan-type/education-loan.jpg" alt="">
+            <h3>Education Loans</h3>
+            <p>Low EMI options to support higher education aspirations in India and abroad.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2025/4/505826543/JZ/MW/DG/68984947/commercial-car-vehicle-finance.png" alt="">
+            <h3>Premium Car & Commercial Vehicle Loans</h3>
+            <p>Financing options for new and used vehicles under competitive terms.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.dhyeyaias.com/storage/media/je9vpJo9WikdEeZzuA1yB1aFtbE8J5xJ09p6Ecxs.jpg" alt="">
+            <h3>Gold Loans</h3>
+            <p>Quick, collateral-based funding secured against gold.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://i0.wp.com/bankkeeping.com/wp-content/uploads/2025/05/CC-OD-DOD.jpg?fit=530%2C530&ssl=1" alt="">
+            <h3>OD / DOD Facilities</h3>
+            <p>Access flexible credit lines with fixed or gradually reducing limits to manage daily cash flow.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="">
+            <h3>Specialized Funding</h3>
+            <p>Access CGTMSE/MSME schemes, HUNDI finance, and specialized project or construction finance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- INSURANCE PRODUCTS -->
+<section class="container">
+    <div class="section-title">Insurance Products</div>
+    <div class="insurance-grid">
+        <div class="insurance-card">
+            <h3>Life Insurance</h3>
+            <p>Financial protection to secure your family’s future and provide peace of mind.</p>
+        </div>
+        <div class="insurance-card">
+            <h3>Health Insurance</h3>
+            <p>Comprehensive coverage for medical bills, hospitalisation, and emergencies.</p>
+        </div>
+        <div class="insurance-card">
+            <h3>General Insurance</h3>
+            <p>Protect assets, vehicles, businesses, and travel plans against unforeseen risks.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHY OUR SERVICES MATTER -->
+<section class="why-us container">
+    <div class="section-title">Why Our Services Matter</div>
+    <div class="why-grid">
+        <div class="why-item">
+            <h4>Proven Track Record</h4>
+            <p>We have successfully processed thousands of applications with a strong commitment to high approval rates.</p>
+        </div>
+        <div class="why-item">
+            <h4>A Trusted Bridge</h4>
+            <p>We act as your dedicated link to top-tier financial institutions, simplifying complex access to capital.</p>
+        </div>
+        <div class="why-item">
+            <h4>Strong Industry Network</h4>
+            <p>Leverage our established relationships with leading banks and NBFCs to secure the best market options.</p>
+        </div>
+        <div class="why-item">
+            <h4>End-to-End Excellence</h4>
+            <p>From first consultation to post-disbursal support, we ensure a seamless, hassle-free journey.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>&copy; 2026 Financial Consulting Services. All Rights Reserved.</footer>
+
+</body>
+</html>
