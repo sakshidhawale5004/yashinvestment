@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us - Financial Experts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Fonts */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 20px 0;
+    }
+    header ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    header ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        transition: opacity 0.3s;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    header ul li a:hover {opacity: 0.7;}
+
+    /* HERO */
+    .hero {
+        height: 800px;
+        background: url("https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    .hero-overlay {position:absolute; inset:0; background: rgba(0,0,0,0.5);}
+    .hero h1 {position: relative; color: #fff; font-size: 48px; z-index: 1;}
+    .hero p {position: relative; color: #fff; z-index: 1; margin-top: 10px;}
+
+    .container {max-width: 1150px; margin: auto; padding: 60px 20px;}
+
+    /* ABOUT */
+    .about-section {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-text {flex: 1; min-width: 280px;}
+    .about-text h2 {font-size: 36px; color: #00a86b; margin-bottom: 15px;}
+    .about-text p {color: #555; line-height: 1.7; margin-bottom: 20px;}
+    .about-image {flex: 1; min-width: 280px;}
+    .about-image img {width: 100%; border-radius: 12px;}
+
+    /* STATS */
+    .stats {display: flex; justify-content: center; gap: 40px; margin-top: 30px;}
+    .stat h3 {font-size: 28px; color: #00a86b; margin: 0;}
+    .stat span {display: block; color: #777; margin-top: 6px;}
+
+    /* FEATURES */
+    .features {margin-top: 60px;}
+    .features h3 {font-size: 30px; color: #00a86b; margin-bottom: 15px;}
+    .features ul {margin-left: 20px; color: #555; font-family: 'Open Sans', Arial, sans-serif;}
+    .features ul li {margin-bottom: 10px;}
+
+    /* TESTIMONIALS */
+    .testimonials {background: #f8fafb; padding: 60px 20px; text-align: center;}
+    .testimonials h2 {font-size: 32px; color: #00a86b; margin-bottom: 15px;}
+    .testimonial-card {
+        display: inline-block;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        width: 280px;
+        margin: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    .testimonial-card p {font-style: italic; color: #555;}
+    .testimonial-card strong {display: block; margin-top: 10px; color: #00a86b;}
+
+    /* BRANDS */
+    .brands {background: #f1f5f9; padding: 40px 20px;}
+    .brand-list {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; max-width: 1000px; margin: auto;}
+    .brand-list img {height: 50px; opacity: 0.7;}
+
+    /* FOOTER */
+    footer {background: #333; color: #fff; text-align: center; padding: 20px; font-size: 14px;}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav style="max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;">
+        <div style="color:#fff;font-weight:bold;font-size:22px;font-family:'Montserrat', Arial, sans-serif;"><img src="https://images.jdmagicbox.com/v2/comp/mumbai/w3/022pxx22.xx22.170330120028.n6w3/catalogue/yash-finance-solutions-borivali-east-mumbai-home-loans-BZmFaPSb7u-250.jpg" style="height:100px; width:auto; object-fit:contain;"
+            alt="Logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Our Cases</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+			 <li><a href="services.html">Services</a></li>
+			
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div>
+        <h1>About Us</h1>
+    </div>
+</section>
+
+<!-- ABOUT SECTIONS -->
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Story</h2>
+        <p>The Concept: We act as a professional bridge, blending modern technology with expert advisory to connect borrowers with the right financial solutions.</p>
+        <p>The Goal: Our mission is to make financial products accessible, transparent, and completely stress-free for everyone and to spread happiness.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Team Collaboration">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>Empowerment: To empower individuals, families, and entrepreneurs with trusted financial products and superior service.</p>
+        <p>Reliability: To demonstrate deep capability and reliability in the financial sector through thousands of processed applications.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://thumbs.dreamstime.com/b/handwriting-text-writing-our-mission-concept-meaning-tasks-schedule-need-to-made-them-right-order-success-woman-wear-161510246.jpg" alt="Mission">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Vision</h2>
+        <p>Trusted Partner: To become the most trusted financial solutions partner across India.</p>
+        <p>Confident Borrowing: To help people navigate the world of smart borrowing with total confidence.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://iaam.se/img/Our%20Vision%20&%20Mission/Pic%201%20-%20640%20X%20426px%20Vision.jpg" alt="Vision">
+    </div>
+</section>
+
+<section class="container about-section">
+    <div class="about-text">
+        <h2>Our Institutional Partners</h2>
+        <p>Nationalized Banks: SBI, Bank of Baroda, PNB, Canara Bank, Union Bank.</p>
+        <p>Private Banks: HDFC, ICICI, Axis, Kotak, IDFC Bank, IndusInd.</p>
+        <p>NBFCs: Bajaj Finance, Tata Capital, Aditya Birla, Mahindra Finance</p>
+        <p>Housing Finance: LIC HFL, PNB Housing, HDFC HFC, Bajaj Housing etc.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://www.calmconsultancy.com/images/institutional-partners-banner.jpg" alt="Partners">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container features">
+    <h3>What Makes Us Different</h3>
+    <ul>
+        <li>Institutional Strength: We leverage a vast network of 50+ partners, including top Nationalized Banks, Private Banks, and NBFCs, to find your best match.</li>
+        <li>Bank-Ready Documentation: We professionally structure your data to ensure it meets strict institutional standards for 2x faster approvals.</li>
+        <li>Deep Industry Experience: Beyond just loans, we bring decades of combined experience in property sales.</li>
+        <li>High-Volume Success: Our track record includes successfully facilitating thousands of applications with consistent commitment to client satisfaction.</li>
+    </ul>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>Leadership / Team Section</h2>
+    <div class="testimonial-card">
+        <p>“Their financial advice transformed our business. Professional, responsive, and results-driven!”</p>
+        <strong>– Sarah M.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Excellent service and personalized planning. Highly recommend!”</p>
+        <strong>– James R.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Top-tier financial guidance that helped me secure my future.”</p>
+        <strong>– Linda K.</strong>
+    </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+    <div class="brand-list">
+        <img src="https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3184350/pexels-photo-3184350.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3183179/pexels-photo-3183179.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" alt="">
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+   <div class="elementor-element elementor-element-cb4b663 e-flex e-con-boxed e-con e-parent" data-id="cb4b663" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-b06eb81 e-con-full e-flex e-con e-child" data-id="b06eb81" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div class="elementor-element elementor-element-4cd6f06 e-con-full e-flex e-con e-child" data-id="4cd6f06" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div class="elementor-element elementor-element-c7bef67 e-con-full e-flex e-con e-child" data-id="c7bef67" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-7bd429e elementor-widget elementor-widget-image" data-id="7bd429e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															
+				</div>
+				<div class="elementor-element elementor-element-79b8818 elementor-widget elementor-widget-text-editor" data-id="79b8818" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam nostrud.						</div>
+				</div>
+				<div class="elementor-element elementor-element-c273838 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c273838" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">(021) 231 - 2870</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Office 839, 8th floor. IJMIMA Corporate Building, Nr. Infinity
+Mall, Mind Space, Link Road, Malad West, Mumbai -400 064</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-aa913d9 e-con-full e-flex e-con e-child" data-id="aa913d9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-26a8625 elementor-widget elementor-widget-heading" data-id="26a8625" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Other Pages</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b840866 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b840866" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Home</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">About Us</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Services</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Contact</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Project</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b6a074 e-con-full e-flex e-con e-child" data-id="3b6a074" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-cc2747b elementor-widget elementor-widget-heading" data-id="cc2747b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Quick Links</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b54668f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b54668f" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Term Of Service</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Disclaimer</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Credits</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">FAQ</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-36c33e9 e-con-full e-flex e-con e-child" data-id="36c33e9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-0e3a071 elementor-widget elementor-widget-heading" data-id="0e3a071" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Work Hours</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2b75262 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2b75262" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-clock"></i>						</span>
+										<span class="elementor-icon-list-text">8 AM - 7 PM , Monday - Saturday</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0e851c7 elementor-widget elementor-widget-text-editor" data-id="0e851c7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Our Support and Sales team is available 24 /7 to answer your queries</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-89142b3 elementor-widget elementor-widget-button" data-id="89142b3" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="#">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Call Us Today</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-51ea85a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="51ea85a" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5940810 e-con-full e-flex e-con e-child" data-id="5940810" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div class="elementor-element elementor-element-8ed6990 e-con-full e-flex e-con e-child" data-id="8ed6990" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-5fd5c31 elementor-widget elementor-widget-text-editor" data-id="5fd5c31" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Finance Template Kit by Jegtheme						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6c98c17 e-con-full e-flex e-con e-child" data-id="6c98c17" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-8fcdf57 elementor-widget elementor-widget-text-editor" data-id="8fcdf57" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Copyright © 2020. All rights reserved.
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+							</div>
+		<link rel='stylesheet' id='jeg-dynamic-style-css' href='https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.3.0' media='all' />
+<link rel='stylesheet' id='sweetalert2-css' href='https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/sweetalert2/sweetalert2.min.css?ver=11.6.16' media='all' />
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.17.3" id="elementor-webpack-runtime-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.17.3" id="elementor-frontend-modules-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.17.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"container":true,"landing-pages":true},"urls":{"assets":"https:\/\/templatekit.jegtheme.com\/financerr\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1086,"title":"Financerr%20%E2%80%93%20Just%20another%20Template%20Kits%20by%20Jegtheme%20site","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.17.3" id="elementor-frontend-js"></script>
+<script id="elementor-frontend-js-after">
+var jkit_ajax_url = "https://templatekit.jegtheme.com/financerr/?jkit-ajax-request=jkit_elements", jkit_nonce = "b5be742ac2";
+</script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.2" id="jkit-sticky-element-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/elements/nav-menu.js?ver=2.6.2" id="jkit-element-navmenu-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/elements/progress-bar.js?ver=2.6.2" id="jkit-element-progressbar-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/elements/team.js?ver=2.6.2" id="jkit-element-team-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/sweetalert2/sweetalert2.min.js?ver=11.6.16" id="sweetalert2-js"></script>
+<script src="https://templatekit.jegtheme.com/financerr/wp-content/plugins/jeg-elementor-kit/assets/js/elements/mailchimp.js?ver=2.6.2" id="jkit-element-mailchimp-js"></script>
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2fac462d877b4ea08c7cff8023c93974","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</footer>
+
+</footer>
+
+</body>
+</html>
